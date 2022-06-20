@@ -1,5 +1,7 @@
+const path = require('path');
 const express = require('express');
-const routes = require('../routes');
+require('dotenv').config({ path: __dirname + `/../.env` });
+const routes = require('./routes');
 // import sequelize connection
 const sequelize = require('./config/connection');
 
